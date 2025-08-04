@@ -8,13 +8,13 @@ import sys
 
 def get_system_info():
     info = []
-
+#Systen' hostname 
     hostname = os.popen('hostname').read().strip()
     info.append("Hostname: " + hostname)
-
+#OS information
     os_info = os.popen('uname -o').read().strip()
     info.append("Operating System: " + os_info)
-
+#Kernel Version information
     kernel = os.popen('uname -r').read().strip()
     info.append("Kernel Version: " + kernel)
 
@@ -23,10 +23,3 @@ def get_system_info():
 
     return info
 
-def main():
-    system_info = get_system_info()
-    for item in system_info:
-        print(item)
-
-if __name__ == "__main__":
-    main()
