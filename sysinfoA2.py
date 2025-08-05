@@ -4,7 +4,7 @@ Author: Sultan Mahamud
 """
 
 import os   #we are importing the os module so we can run  commands like 'uname', 'df', 'free' from Python using os.popen()
-import sys  #sys is needed to access command line arguments passed to the script
+
 
 
 def get_system_info():  #function to gather general system information
