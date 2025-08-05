@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import os  # importing the os module so we can run commands like 'df -h'
-
+import sys # handles command line inputs and exits the program
 # Function to check disk usage for root ('/') partition
 def get_disk_info():
     info = [] # store all the disk info we collect
