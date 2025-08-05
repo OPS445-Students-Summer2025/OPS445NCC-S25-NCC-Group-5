@@ -26,3 +26,11 @@ def get_system_info():  #function to gather general system information
 
     return info #it returns the info list so the calling function can print it or use it later
 
+if __name__ == "__main__":
+    system_info = get_system_info()
+    
+    print("\nSystem Information:")
+    print("------------------")
+    for item in system_info:
+        print(item)
+    print()
